@@ -22,16 +22,7 @@ function resize(x,y)
     var imgchn=document.getElementById(x.id);
     var btndom=document.getElementById(y.id);
 
-    if(pre_img!="")
-    {
-        if(pre_img!=imgchn)
-        {
-             pre_btn.innerHTML="medium";    
-             pre_img.style.width="500";
-             pre_img.style.height="300";
-             btn_count=0;
-        }
-    }
+    
     pre_img=imgchn;
     pre_btn=btndom;
 
@@ -39,46 +30,25 @@ function resize(x,y)
     {
         case 0:
             btndom.innerHTML="large";
-            imgchn.style.width=750;
-            imgchn.style.height=530;      
+            imgchn.style.width=1050;
+            imgchn.style.height=820;      
             btn_count=1;
             break;
         case 1:
-            btndom.innerHTML="large";
-            imgchn.style.width=750;
-            imgchn.style.height=530;      
-            btn_count=1;   
+            btndom.innerHTML="small";
+            imgchn.style.width=1250;
+            imgchn.style.height=930;      
+            btn_count=2;   
             break;
         case 2:
-            btndom.innerHTML="large";
-            imgchn.style.width=750;
-            imgchn.style.height=530;      
-            btn_count=1;    
+            btndom.innerHTML="medium";
+            imgchn.style.width=700;
+            imgchn.style.height=500;      
+            btn_count=0;    
             break;
 
     }
-    if(btn_count==0)
-    {  
-       btndom.innerHTML="large";
-       imgchn.style.width=750;
-       imgchn.style.height=530;      
-       btn_count=1;
-    }
-    else if(btn_count==1)
-    {
-        btndom.innerHTML="small";    
-        imgchn.style.width=1230;
-        imgchn.style.height=1100;
-        btn_count=2;
-    }
-    else if(btn_count==2)
-    {
-        btn_count=0;    
-        btndom.innerHTML="medium";    
-        imgchn.style.width=700;
-        imgchn.style.height=500;
-       
-    }
+    
     imgchn.style.transition="width 2s,height 2s";
 }
 function gotop(x)
