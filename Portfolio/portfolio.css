@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #111010;
+    line-height: 1.6;
+}
+.btn{
+position: relative;
+left: 100px;
+border-radius: 100%;
+color: black;
+background-color: rgb(167, 108, 66);
+padding: 10px 10px;
+cursor: pointer;
+
+
+}
+.container{
+    width: 100%;
+    height: 100%;
+    /*CSS Smooth Scroll*/
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+.scrollbar{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgb(0,0,0,0.7);
+}
+.scrollbar ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+.scrollbar ul li{
+    margin: 0 1rem;
+    padding: 1rem;
+}
+.scrollbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4f4f4;
+}
+.scrollbar ul li a:hover{
+    color: #71db77;
+}
+section{    
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: left;
+width: 100%;
+height: 120vh;
+scroll-snap-align: center;
+}
+section h1{
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+section h4{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: left;
+}
+section h3{
+    font-size: 1.5rem;    
+}
+section p{
+    font-size: 1rem;
+}
+section#home{
+    background-image: url('../Portfolio/ImageGallery/pb.jpg');
+    
+}
+section#about{
+    background-image: url('../Portfolio/ImageGallery/pb.jpg');
+    }
+section#projects{
+    background-image: url('../Portfolio/ImageGallery/pb.jpg');
+    height: 100vh;
+}
+section#contact{
+    background-image: url('../Portfolio/ImageGallery/pb.jpg') ;
+    height: 60vh;
+}
+.about{
+    position: relative;
+    top: 1%;
+}
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    
+  }
+  
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+
+.gmail,.hobby{
+    size: 20%;
+    height: 20px;
+    width: 25px;    
+}
+.git, .link, .outlook{
+    height: 20px;
+    width: 25px;
+}
+
